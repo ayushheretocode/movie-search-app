@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.search-box{
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    width: 75%;
+    border: 2px solid rgb(34, 34, 34);
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 6px 10px;
+}
+
+button{
+    width: 25%;
+    padding: 10px 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(36, 36, 36);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+}
+button:hover{
+    background-color: rgb(88, 88, 88);
+}
+
+.movie-card{
+    background:linear-gradient(180deg,grey,rgb(41, 41, 41));
+    padding: 30px 24px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    max-width: 500px;
+    margin: 2em auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-display{
+    border-radius: 16px;
+}
+
+.title-display{
+    margin-top: 24px;
+    font-size: 3em;
+    line-height: 1.2;
+    color: white;
+}
+
+.year-and-runtime-display{
+    margin-top: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;;
+}
+
+.genre-display{
+    margin-top: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+.plot-display{
+    margin-top: 24px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+.imdb-rating-display{
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd500;
+}
+
+
+span{
+    color: rgb(87, 153, 239);
+}
+.director-display{
+    margin-top: 24px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.actors-display{
+    margin-top: 24px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+
+@media(max-width:500px)
+{
+    .search-box{
+        max-width: 90%;
+    }
+    .movie-card{
+        max-width: 95%;
+    }
+}
